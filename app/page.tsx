@@ -196,14 +196,15 @@ export default function KaitoriTopPage() {
             </h1>
 
             {/* スマホ用画像 */}
-            <div className="mt-6 flex justify-center lg:hidden">
-              <div className="w-full max-w-[280px]">
+            <div className="mt-6 lg:hidden">
+              <div className="relative w-full">
                 <Image
                   src="/img/main2.png"
                   alt="ブランド品や買取イメージ"
                   width={920}
                   height={1100}
-                  className="h-auto w-full object-contain"
+                  className="h-auto w-full scale-[1.1] object-cover"
+                  priority
                 />
               </div>
             </div>
@@ -230,14 +231,14 @@ export default function KaitoriTopPage() {
           
           {/* メインの右側画像 */}
           <div className="hidden lg:flex justify-end">
-            <div className="relative w-full max-w-[280px] sm:max-w-[330px] md:max-w-[390px] lg:max-w-[460px]">
+            <div className="relative w-[120%] max-w-none translate-x-[5%]">
               <Image
                 src="/img/main2.png"
                 alt="ブランド品や買取イメージ"
                 width={920}
                 height={1100}
                 priority
-                className="h-auto w-full object-contain"
+                className="h-auto w-full object-cover"
               />
             </div>
           </div>
@@ -526,7 +527,6 @@ export default function KaitoriTopPage() {
 
             {/* 補足（任意） */}
             <div className="mt-5 flex items-start gap-2 text-[13px] text-gray-500">
-              <i className="ri-information-line text-base mt-[2px]" />
               <p>
                 ※ご成約時に必要となります。査定のみの場合は不要です。
               </p>
@@ -572,7 +572,7 @@ export default function KaitoriTopPage() {
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {/* 1 */}
-            <div className="overflow-hidden rounded-[24px] border border-[#efc5c5] bg-white">
+            <div className="overflow-hidden rounded-[24px] border border-[#e6e6e6] bg-white">
               <div className="relative aspect-[1.6/1] w-full">
                 <Image
                   src="/img/item-bag.jpg"
@@ -714,9 +714,7 @@ export default function KaitoriTopPage() {
                 </div>
 
                 <h3 className="mt-6 text-[18px] font-bold leading-9">
-                  掲載のない品物も
-                  <br />
-                  ご相談ください
+                  掲載のない品物もご相談ください
                 </h3>
 
                 <p className="mt-4 text-[14px] leading-8 text-white/90">

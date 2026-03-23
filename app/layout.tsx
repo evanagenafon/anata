@@ -20,7 +20,34 @@ const notoSerif = Noto_Serif_JP({
 export const metadata: Metadata = {
   title: "あなたの鑑定士｜関目の買取専門店",
   description:
-    "大阪市城東区・関目の買取専門店「あなたの鑑定士」。査定料0円、手数料0円、査定のみOK。その場で現金買取にも対応。",
+    "大阪市城東区成育の買取専門店「あなたの鑑定士 関目店」。ヴィトン・シャネル・エルメス・ロレックスを中心に、査定無料・相談無料・手数料0円で丁寧にご案内します。",
+  alternates: {
+    canonical: "https://anata-no-kanteishi.com",
+  },
+  openGraph: {
+    title: "あなたの鑑定士｜関目の買取専門店",
+    description:
+      "大阪市城東区成育の買取専門店「あなたの鑑定士 関目店」。ヴィトン・シャネル・エルメス・ロレックスを中心に、査定無料・相談無料・手数料0円で丁寧にご案内します。",
+    url: "https://anata-no-kanteishi.com",
+    siteName: "あなたの鑑定士",
+    locale: "ja_JP",
+    type: "website",
+    images: [
+      {
+        url: "/img/ogp.jpg",
+        width: 1200,
+        height: 630,
+        alt: "あなたの鑑定士 関目店",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "あなたの鑑定士｜関目の買取専門店",
+    description:
+      "大阪市城東区成育の買取専門店「あなたの鑑定士 関目店」。ヴィトン・シャネル・エルメス・ロレックスを中心に、査定無料・相談無料・手数料0円で丁寧にご案内します。",
+    images: ["/img/ogp.jpg"],
+  },
 };
 
 export default function RootLayout({
