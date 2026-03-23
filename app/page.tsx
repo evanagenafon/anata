@@ -113,7 +113,7 @@ export default function KaitoriTopPage() {
               alt="あなたの鑑定士"
               width={150}
               height={42}
-              className="h-8 w-auto md:h-9"
+              className="h-10 w-auto md:h-9"
             />
           </Link>
 
@@ -138,10 +138,10 @@ export default function KaitoriTopPage() {
 
           {/* スマホメニュー */}
           <details className="group relative md:hidden">
-            <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center [&::-webkit-details-marker]:hidden">
-              <span className="relative block h-[26px] w-[26px]">
-                <i className="ri-menu-line absolute inset-0 text-[26px] text-zinc-900 transition-all duration-300 ease-out group-open:scale-0 group-open:opacity-0" />
-                <i className="ri-close-line absolute inset-0 text-[26px] text-zinc-900 scale-0 opacity-0 transition-all duration-300 ease-out group-open:scale-100 group-open:opacity-100" />
+            <summary className="flex h-full w-10 cursor-pointer list-none items-center justify-center [&::-webkit-details-marker]:hidden">
+              <span className="relative flex h-[26px] w-[26px] items-center justify-center">
+                <i className="leading-none ri-menu-line absolute inset-0 text-[26px] text-zinc-900 transition-all duration-300 ease-out group-open:scale-0 group-open:opacity-0" />
+                <i className="leading-none ri-close-line absolute inset-0 text-[26px] text-zinc-900 scale-0 opacity-0 transition-all duration-300 ease-out group-open:scale-100 group-open:opacity-100" />
               </span>
             </summary>
 
