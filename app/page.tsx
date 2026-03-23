@@ -76,29 +76,6 @@ export default function KaitoriTopPage() {
     },
   ];
 
-  const achievements = [
-    { title: "ヴィトン バッグ", price: "参考査定例", note: "状態やモデルにより変動します" },
-    { title: "シャネル 財布", price: "参考査定例", note: "付属品の有無も確認します" },
-    { title: "ロレックス", price: "参考査定例", note: "年式・状態をふまえて査定" },
-    { title: "金のネックレス", price: "参考査定例", note: "重量・品位を確認して査定" },
-    { title: "プラチナリング", price: "参考査定例", note: "石付きのお品物もご相談可" },
-  ];
-
-  const reviews = [
-    {
-      name: "30代 女性",
-      text: "はじめて買取店を利用したのですが、査定内容を丁寧に説明してもらえて安心できました。",
-    },
-    {
-      name: "40代 男性",
-      text: "ブランドバッグだけでなく時計もまとめて相談できて助かりました。入りやすい雰囲気でした。",
-    },
-    {
-      name: "50代 女性",
-      text: "売るか迷っていた段階でも親切に対応してもらえたのが良かったです。",
-    },
-  ];
-
   const faqs = [
     {
       q: "査定だけでも可能ですか？",
@@ -129,94 +106,109 @@ export default function KaitoriTopPage() {
   return (
     <main className="min-h-screen bg-[#f4f4f4] text-zinc-900">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-white/95 backdrop-blur">
-  <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-    <Link href="/" className="flex items-center">
-      <Image
-        src="/img/logo-red.svg"
-        alt="あなたの鑑定士"
-        width={150}
-        height={42}
-        className="h-8 w-auto md:h-9"
-      />
-    </Link>
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/img/logo-red.svg"
+              alt="あなたの鑑定士"
+              width={150}
+              height={42}
+              className="h-8 w-auto md:h-9"
+            />
+          </Link>
 
-    {/* PCメニュー */}
-    <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-      <a href="#flow" className="transition hover:text-[#C5292B]">
-        ご利用の流れ
-      </a>
-      <a href="#reason" className="transition hover:text-[#C5292B]">
-        選ばれる理由
-      </a>
-      <a href="#items" className="transition hover:text-[#C5292B]">
-        買取品目
-      </a>
-      <a href="#faq" className="transition hover:text-[#C5292B]">
-        よくあるご質問
-      </a>
-      <a href="#store" className="transition hover:text-[#C5292B]">
-        店舗情報
-      </a>
-    </nav>
+          {/* PCメニュー */}
+          <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+            <a href="#flow" className="transition hover:text-[#C5292B]">
+              ご利用の流れ
+            </a>
+            <a href="#reason" className="transition hover:text-[#C5292B]">
+              選ばれる理由
+            </a>
+            <a href="#items" className="transition hover:text-[#C5292B]">
+              買取品目
+            </a>
+            <a href="#faq" className="transition hover:text-[#C5292B]">
+              よくあるご質問
+            </a>
+            <a href="#store" className="transition hover:text-[#C5292B]">
+              店舗情報
+            </a>
+          </nav>
 
-    {/* スマホメニュー */}
-    <details className="relative md:hidden">
-      <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center [&::-webkit-details-marker]:hidden">
-        <i className="ri-menu-line text-[26px] leading-none text-zinc-900 details-open:hidden" />
-        <i className="ri-close-line hidden text-[26px] leading-none text-zinc-900 details-open:block" />
-      </summary>
+          {/* スマホメニュー */}
+          <details className="group relative md:hidden">
+            <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center [&::-webkit-details-marker]:hidden">
+              <span className="relative block h-[26px] w-[26px]">
+                <i className="ri-menu-line absolute inset-0 text-[26px] text-zinc-900 transition-all duration-300 ease-out group-open:scale-0 group-open:opacity-0" />
+                <i className="ri-close-line absolute inset-0 text-[26px] text-zinc-900 scale-0 opacity-0 transition-all duration-300 ease-out group-open:scale-100 group-open:opacity-100" />
+              </span>
+            </summary>
 
-      <div className="absolute right-0 top-full z-50 mt-2 w-[240px] rounded-2xl border border-gray-100 bg-white p-2 shadow-lg">
-        <a
-          href="#flow"
-          className="block rounded-xl px-3 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
-        >
-          ご利用の流れ
-        </a>
+            <div className="fixed left-0 top-[56px] z-50 w-full border-t border-gray-100 bg-white px-4 py-4 shadow-lg">
+              <a
+                href="#flow"
+                className="block rounded-xl px-4 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
+              >
+                ご利用の流れ
+              </a>
 
-        <a
-          href="#reason"
-          className="block rounded-xl px-3 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
-        >
-          選ばれる理由
-        </a>
+              <a
+                href="#reason"
+                className="block rounded-xl px-4 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
+              >
+                選ばれる理由
+              </a>
 
-        <a
-          href="#items"
-          className="block rounded-xl px-3 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
-        >
-          買取品目
-        </a>
+              <a
+                href="#items"
+                className="block rounded-xl px-4 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
+              >
+                買取品目
+              </a>
 
-        <a
-          href="#faq"
-          className="block rounded-xl px-3 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
-        >
-          よくあるご質問
-        </a>
+              <a
+                href="#faq"
+                className="block rounded-xl px-4 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
+              >
+                よくあるご質問
+              </a>
 
-        <a
-          href="#store"
-          className="block rounded-xl px-3 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
-        >
-          店舗情報
-        </a>
-      </div>
-    </details>
-  </div>
-</header>
-
-      <section className="bg-[#ff3b36] text-white">
+              <a
+                href="#store"
+                className="block rounded-xl px-4 py-3 text-sm font-medium text-zinc-800 transition hover:bg-red-50 hover:text-[#C5292B]"
+              >
+                店舗情報
+              </a>
+            </div>
+          </details>
+        </div>
+      </header>
+      
+      {/* メイン */}
+      <section className="bg-[#e53935] text-white">
         <div className="grid mx-auto max-w-6xl items-center gap-8 px-4 pb-16 pt-10 md:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:pb-20 lg:pt-14">
-          <div className="max-w-[620px]">
+          <div className="max-w-[620px] text-center lg:text-left">
             <h1 className="mt-5 text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
               あなたの"大切な物"を
               <span className="mt-2 block">安心して相談できる</span>
               <span className="mt-2 block">買取店。</span>
             </h1>
 
+            {/* スマホ用画像 */}
+            <div className="mt-6 flex justify-center lg:hidden">
+              <div className="w-full max-w-[280px]">
+                <Image
+                  src="/img/main2.png"
+                  alt="ブランド品や買取イメージ"
+                  width={920}
+                  height={1100}
+                  className="h-auto w-full object-contain"
+                />
+              </div>
+            </div>
+
             <p className="mt-6 max-w-xl text-sm leading-7 text-white/90 md:text-base">
-              はじめての方にもわかりやすく、納得感のあるご案内を心がけています。<br />
               売るかどうか迷っている段階でも、まずはお気軽にご相談ください。
             </p>
 
@@ -235,9 +227,10 @@ export default function KaitoriTopPage() {
               </a>
             </div>
           </div>
-
+          
+          {/* メインの右側画像 */}
           <div className="hidden lg:flex justify-end">
-            <div className="relative w-full max-w-[460px]">
+            <div className="relative w-full max-w-[280px] sm:max-w-[330px] md:max-w-[390px] lg:max-w-[460px]">
               <Image
                 src="/img/main2.png"
                 alt="ブランド品や買取イメージ"
@@ -250,7 +243,7 @@ export default function KaitoriTopPage() {
           </div>
         </div>
         <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <div className="flex flex-wrap justify-center gap-6 border-t border-white/20 pt-6 pb-6 text-white/80">
+          <div className="flex flex-wrap justify-center gap-6 border-t border-white/20 pt-6 pb-6 text-white">
 
             <div className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center">
@@ -327,8 +320,7 @@ export default function KaitoriTopPage() {
               </h3>
 
               <p className="mx-auto mt-3 max-w-xs text-sm leading-7 text-[#6b7280]">
-                店頭にそのままお持ちください。予約不要です。
-                事前にお電話でご連絡いただくとスムーズです。
+                店舗までお気軽にお越しください。予約なしでご利用いただけます。
               </p>
             </div>
 
@@ -1048,7 +1040,7 @@ export default function KaitoriTopPage() {
                 </a>
 
                 <a
-                  href="https://www.google.com/maps/place/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E9%91%91%E5%AE%9A%E5%A3%AB+%E9%96%A2%E7%9B%AE%E5%BA%97/"
+                  href="https://www.google.com/maps?cid=1811997118710577813"
                   target="_blank"
                   className="inline-flex min-h-[44px] flex-1 items-center justify-center rounded-lg border border-[#efb7b2] bg-white px-4 text-xs font-bold text-[#b3261e]"
                 >
