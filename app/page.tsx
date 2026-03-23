@@ -834,7 +834,7 @@ export default function KaitoriTopPage() {
                     A
                   </span>
                   <p className="text-[14px] leading-6 text-gray-600">
-                    はい。状態によって査定額は変わりますが、傷や使用感があるお品物でも査定できる場合があります。まずは一度お持ちください。
+                    はい。状態によって査定額は変わりますが、傷や使用感があるお品物でも査定可能です。まずは一度お持ちください。
                   </p>
                 </div>
               </div>
