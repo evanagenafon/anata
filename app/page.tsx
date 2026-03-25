@@ -292,7 +292,10 @@ export default function KaitoriTopPage() {
             <div className="mx-auto mt-3 h-[2px] w-10 bg-[#b3261e]" />
 
             <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-[#6b7280]">
-              来店から現金受け取りまで、たったの3ステップ。<br />
+              来店から現金受け取りまで、たったの<span className="relative mx-1 inline-block text-base font-bold leading-none text-[#111827] md:text-lg">
+    <span className="relative z-10">3ステップ</span>
+    <span className="absolute bottom-0 left-0 z-0 h-[0.42em] w-full rounded-sm bg-[#f6d54a]/65" />
+  </span>。<br />
               むずかしいお手続きは一切ありません。
             </p>
           </div>
@@ -1084,12 +1087,9 @@ export default function KaitoriTopPage() {
 
           {/* 下段（コピーライト） */}
           <div className="mt-6 flex flex-col gap-2 text-xs text-gray-500 leading-6 md:flex-row md:items-center md:justify-between">
-            <p>© 2024 あなたの鑑定士. All rights reserved.</p>
-            <p className="md:text-right">
-              大阪市城東区の買取専門店 あなたの鑑定士 関目店
-            </p>
+            <p>大阪市城東区の買取専門店 あなたの鑑定士 関目店</p>
+            <p className="md:text-right">© {new Date().getFullYear()} あなたの鑑定士. All rights reserved.</p>
           </div>
-
         </div>
       </footer>
     </main>
