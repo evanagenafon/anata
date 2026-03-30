@@ -199,7 +199,7 @@ export default function KaitoriTopPage() {
             <div className="mt-6 lg:hidden">
               <div className="relative w-full">
                 <Image
-                  src="/img/main2.png"
+                  src="/img/main.png"
                   alt="ブランド品や買取イメージ"
                   width={920}
                   height={1100}
