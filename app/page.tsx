@@ -184,7 +184,7 @@ export default function KaitoriTopPage() {
           </details>
         </div>
       </header>
-      
+
       {/* メイン */}
       <section className="bg-[#e53935] text-white">
         <div className="grid mx-auto max-w-6xl items-center gap-8 px-4 pb-16 pt-10 md:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10 lg:pb-20 lg:pt-14">
@@ -228,7 +228,7 @@ export default function KaitoriTopPage() {
               </a>
             </div>
           </div>
-          
+
           {/* メインの右側画像 */}
           <div className="hidden lg:flex justify-end">
             <div className="relative w-[120%] max-w-none translate-x-[5%]">
@@ -280,7 +280,7 @@ export default function KaitoriTopPage() {
 
       <section id="flow" className="bg-white px-4 py-12 md:px-6 md:py-16">
         <div className="mx-auto max-w-6xl">
-          
+
           {/* 見出し */}
           <div className="text-center">
             <p className="text-xs tracking-[0.2em] text-[#b3261e]">HOW IT WORKS</p>
@@ -514,7 +514,7 @@ export default function KaitoriTopPage() {
       <section className="bg-white py-12 md:py-16">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <div className="rounded-2xl border border-red-100 bg-red-50/50 px-6 py-8 md:px-10 md:py-10">
-            
+
             {/* 見出し */}
             <h2 className="text-center text-[18px] md:text-[20px] font-bold text-[#111827]">
               お買取りに必要なものは
@@ -950,7 +950,7 @@ export default function KaitoriTopPage() {
           </div>
 
           <div className="mt-8 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
-            
+
             {/* 地図 */}
             <div className="overflow-hidden rounded-[1.25rem] bg-white shadow-sm h-full min-h-[380px]">
               <iframe
@@ -970,7 +970,7 @@ export default function KaitoriTopPage() {
                 <p className="mt-1 text-sm text-zinc-500">買取専門店</p>
 
                 <div className="mt-5 space-y-4">
-                  
+
                   {/* 住所 */}
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 flex items-center justify-center bg-red-50 rounded-xl shrink-0">
@@ -980,7 +980,7 @@ export default function KaitoriTopPage() {
                       <p className="text-xs text-zinc-400">住所</p>
                       <p className="mt-1 text-sm font-semibold text-[#1f2937] leading-6">
                         〒536-0007<br />
-                        大阪市城東区成育5丁目9-11
+                        大阪市城東区成育5丁目9-11HAKU関目駅前1F
                       </p>
                     </div>
                   </div>
@@ -1056,10 +1056,10 @@ export default function KaitoriTopPage() {
 
       <footer className="bg-[#f5f5f5] px-4 py-10 md:px-6 md:py-12">
         <div className="mx-auto max-w-6xl">
-          
+
           {/* 上段 */}
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-            
+
             {/* ロゴ */}
             <a href="#top">
               <Image
